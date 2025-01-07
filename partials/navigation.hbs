@@ -1,0 +1,7 @@
+{{#if @site.navigation}}
+    <!-- Loop through the navigation items -->
+    {{#foreach navigation}}
+        <a class="px-4 py-4 underline-offset-2 sm:py-0 sm:hover:underline" href="{{url absolute="true"}}">{{label}}</a>
+    {{/foreach}}
+    <!-- End the loop -->
+{{/if}}
